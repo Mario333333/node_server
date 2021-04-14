@@ -3,7 +3,7 @@ const app = express();
 const mysql = require("mysql");
 const connection = require("express-myconnection");
 
-app.set("port", process.env.port || 9000);
+app.set("port", process.env.port || 8000);
 app.listen(app.get("port"), () => {
   console.log("Runnig on port ", app.get("port"));
 });
